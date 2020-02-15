@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+            一个元素分两层，上次为文字模型，下层为盒模型，当盒模型浮动时，文字模型会留在下面
+        */
+        div{
+            width: 200px;
+            height: 200px;
+        }
+
+        .up{
+            float: left;
+            background-color: pink;
+        }
+
+        .down{
+            background-color: deeppink;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="up">
+        upupupupupup
+    </div>
+    <div class="down">
+        downdowndowndowndown
+    </div>
+</body>
+</html>

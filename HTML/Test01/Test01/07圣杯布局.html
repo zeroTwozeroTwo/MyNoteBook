@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <!--
+    技术点:
+      浮动:搭建完整的布局框架
+      margin:为负值调整旁边两列的位置(使三列布局到同一行)
+      使用相对定位：调整旁边两列的位置(使两列位置调整到两头)
+  -->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .header, .footer {
+            height: 20px;
+            text-align: center;
+            border: 1px solid deeppink;
+        }
+
+        .content {
+            padding: 0 200px;
+        }
+
+        .content .middle {
+            background-color: pink;
+            float: left;
+            width: 100%;
+        }
+
+        .content .left {
+            position: relative;
+            left: -200px;
+            float: left;
+            width: 200px;
+            margin-left: -100%;
+            background-color: yellow;
+        }
+
+        .content .right {
+            float: left;
+            position: relative;
+            right: -200px;
+            margin-left: -200px;
+            width: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="header">header</div>
+<div class="content clearfix">
+    <div class="middle">middle</div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+</div>
+<div class="footer">footer</div>
+</body>
+</html>

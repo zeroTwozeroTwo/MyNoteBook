@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--三列布局-->
+    <!--1.两边固定，当中自适应-->
+    <!--2.当中列要完整显示-->
+    <!---->
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            /*最小宽度求法：2*left+right */
+            min-width: 600px;
+            position: relative;
+        }
+
+        div{
+            height: 100px;
+        }
+
+        .left,.right{
+            width: 200px;
+            background-color: pink;
+        }
+
+        .middle{
+            background-color: deeppink;
+            padding: 0 200px;
+        }
+
+        .left{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .right{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">left</div>
+    <div class="middle">middle</div>
+    <div class="right">right</div>
+</body>
+</html>
