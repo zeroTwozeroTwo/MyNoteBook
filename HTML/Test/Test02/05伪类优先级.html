@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*
+            涉及到a的伪类一共有四个：
+            :link
+            :visited
+            :hover
+            :active
+            而这四个选择器的优先级是一样的。
+         */
+        a:link{
+            color: yellowgreen;
+        }
+
+        a:visited{
+            color: red;
+        }
+        /*
+            鼠标移入
+         */
+        a:hover{
+            color: orange;
+        }
+        /*
+            正在点击
+         */
+        a:active{
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+<a href="http://www.baidu.com">访问过的链接</a>
+<br/>
+<a href="http://www.baidu123.com">未访问过的链接</a>
+</body>
+</html>
