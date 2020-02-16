@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航条</title>
+    <style type="text/css">
+        *{
+            /*清除默认样式*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .nav{
+            /*去除项目符号*/
+            list-style: none;
+            /*为ul设置一个背景颜色*/
+            background-color: #6495ED;
+            /*设置一个宽度*/
+            /*
+                在IE6中，如果为元素指定了一个宽度，则会默认开启hasLayout
+            */
+            width: 1000px;
+            /*设置元素居中*/
+            margin: 50px auto;
+            /*解决高度塌陷*/
+            overflow: hidden;
+        }
+
+        .nav li{
+            float: left;
+            /*为li指定一个宽度*/
+            width: 25%;
+        }
+        .nav a{
+            /*将a转化为块元素*/
+            display: inline-block;
+            /*设置宽度*/
+            width: 100%;
+            /*设置一个上下内边距*/
+            padding: 5px 0;
+            /*居中*/
+            text-align: center;
+            /*去掉下划线*/
+            text-decoration: none;
+            /*白色字体*/
+            color: white;
+            /*字体加粗*/
+            font-weight: bold;
+        }
+
+        a:hover{
+            /*设置鼠标移入效果*/
+            background-color: #cc0000;
+        }
+
+    </style>
+</head>
+<body>
+<!--创建导航条结构-->
+<ul class="nav">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">新闻</a></li>
+    <li><a href="#">联系</a></li>
+    <li><a href="#">关于</a></li>
+</ul>
+</body>
+</html>
