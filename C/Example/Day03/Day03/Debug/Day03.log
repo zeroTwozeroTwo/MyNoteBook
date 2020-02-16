@@ -1,0 +1,3 @@
+﻿  atoi函数.c
+D:\C_Code\VS\Day03\Day03\atoi函数.c(18,1): warning C4244:  “初始化”: 从“double”转换到“float”，可能丢失数据
+  Day03.vcxproj -> D:\C_Code\VS\Day03\Debug\Day03.exe
