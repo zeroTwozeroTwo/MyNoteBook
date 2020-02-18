@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+	//指针和数组
+	//利用指针访问数组中的元素
+	int arr[10] = { 1,2,3,4,5,6,7,8,9 ,10 };
+	cout << "第一个元素为:" << arr[0] << endl;
+	int* p = arr;//arr就是数组的首地址
+	cout << "利用指针访问第一个元素:" << *p << endl;
+	int len = sizeof(arr) / sizeof(int);
+	for (int i = 0; i < len; i++)
+	{
+		cout << *p << endl;
+		p++;
+	}
+	return 0;
+}
