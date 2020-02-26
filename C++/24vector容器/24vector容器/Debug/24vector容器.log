@@ -1,0 +1,3 @@
+﻿  07vector容器-预留空间.cpp
+D:\C_Code\VS\C++\Example\24vector容器\24vector容器\07vector容器-预留空间.cpp(51,18): warning C4018: “<”: 有符号/无符号不匹配
+  24vector容器.vcxproj -> D:\C_Code\VS\C++\Example\24vector容器\24vector容器\Debug\24vector容器.exe
